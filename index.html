@@ -682,15 +682,29 @@ document.addEventListener('DOMContentLoaded', function() {
           </div>
         </div>
 
-        <!-- Results count -->
-        <div class="mb-4 text-sm text-slate-400">
-          Найдено вакансий: <span id="results-count" class="font-semibold text-cyan-400">50</span>
+        <!-- Initial message - shown before filtering -->
+        <div id="initial-message" class="text-center py-12">
+          <div class="mb-4">
+            <svg class="w-16 h-16 mx-auto text-cyan-400/30" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M21 21l-6-6m2-5a7 7 0 11-14 0 7 7 0 0114 0z"></path>
+            </svg>
+          </div>
+          <h3 class="text-lg font-semibold text-slate-300 mb-2">Выберите фильтры выше</h3>
+          <p class="text-sm text-slate-400">Используйте поиск или фильтры по стране, категории и зарплате</p>
         </div>
 
-        <!-- Vacancies Table -->
-        <div class="overflow-x-auto">
-          <div id="vacancies-list" class="space-y-3">
-            <!-- Vacancies will be inserted here by JavaScript -->
+        <!-- Results section - hidden by default -->
+        <div id="results-section" class="hidden">
+          <!-- Results count -->
+          <div class="mb-4 text-sm text-slate-400">
+            Найдено вакансий: <span id="results-count" class="font-semibold text-cyan-400">0</span>
+          </div>
+
+          <!-- Vacancies Table -->
+          <div class="overflow-x-auto">
+            <div id="vacancies-list" class="space-y-3">
+              <!-- Vacancies will be inserted here by JavaScript -->
+            </div>
           </div>
         </div>
 
@@ -6194,7 +6208,8 @@ document.addEventListener('DOMContentLoaded', function() {
     filteredVacancies = [...allVacancies];
 
     initializeFilters();
-    renderVacancies();
+    // Don't render vacancies on load - wait for user to select filters
+    // renderVacancies();
 
     // Attach event listeners
     document.getElementById('vacancy-search').addEventListener('input', filterVacancies);
@@ -6233,6 +6248,24 @@ function filterVacancies() {
   const selectedCountry = document.getElementById('country-filter').value;
   const selectedCategory = document.getElementById('category-filter').value;
   const selectedSalary = document.getElementById('salary-filter').value;
+
+  // Check if any filter is active
+  const hasActiveFilters = searchTerm || selectedCountry || selectedCategory || selectedSalary;
+
+  // Show/hide initial message and results section
+  const initialMessage = document.getElementById('initial-message');
+  const resultsSection = document.getElementById('results-section');
+
+  if (!hasActiveFilters) {
+    // No filters selected - show initial message
+    initialMessage.classList.remove('hidden');
+    resultsSection.classList.add('hidden');
+    return;
+  }
+
+  // Filters are active - hide initial message and show results
+  initialMessage.classList.add('hidden');
+  resultsSection.classList.remove('hidden');
 
   filteredVacancies = allVacancies.filter(vacancy => {
     // Search filter
