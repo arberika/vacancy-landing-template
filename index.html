@@ -2098,7 +2098,43 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
        </div>
 
-      </section><!-- Финальный CTA -->
+      </section>
+
+      <!-- Instagram CTA -->
+      <section id="instagram-cta" class="fade-up">
+       <div class="bg-gradient-to-r from-purple-600 to-pink-600 rounded-2xl p-6 sm:p-8 border border-purple-400/50 shadow-xl">
+        <div class="flex flex-col md:flex-row items-center gap-6">
+         <div class="flex-1 text-white space-y-3">
+          <h2 id="instagram_cta_heading" class="text-2xl sm:text-3xl font-bold">
+           📸 Подпишитесь на наш Instagram
+          </h2>
+          <p id="instagram_cta_text" class="text-lg text-purple-100">
+           Получайте эксклюзивный контент, новые вакансии и советы экспертов
+          </p>
+          <p id="instagram_cta_services" class="text-sm text-purple-50 bg-purple-700/30 rounded-lg p-3 border border-purple-400/30">
+           💼 Нужна другая вакансия? Вопросы по иммиграции, ВНЖ или юридическим вопросам? У нас много специалистов!
+          </p>
+         </div>
+         <div class="flex-shrink-0">
+          <a
+           href="https://www.instagram.com/eriarwork"
+           target="_blank"
+           rel="noopener noreferrer"
+           id="instagram_cta_button"
+           class="inline-flex items-center gap-3 bg-white text-purple-600 font-bold px-8 py-4 rounded-xl hover:bg-purple-50 transition-all duration-300 shadow-lg hover:shadow-xl hover:scale-105"
+           onclick="trackEvent('instagram_cta_click', {source: 'instagram_section'})"
+          >
+           <svg class="w-6 h-6" fill="currentColor" viewBox="0 0 24 24">
+            <path d="M12 2.163c3.204 0 3.584.012 4.85.07 3.252.148 4.771 1.691 4.919 4.919.058 1.265.069 1.645.069 4.849 0 3.205-.012 3.584-.069 4.849-.149 3.225-1.664 4.771-4.919 4.919-1.266.058-1.644.07-4.85.07-3.204 0-3.584-.012-4.849-.07-3.26-.149-4.771-1.699-4.919-4.92-.058-1.265-.07-1.644-.07-4.849 0-3.204.013-3.583.07-4.849.149-3.227 1.664-4.771 4.919-4.919 1.266-.057 1.645-.069 4.849-.069zm0-2.163c-3.259 0-3.667.014-4.947.072-4.358.2-6.78 2.618-6.98 6.98-.059 1.281-.073 1.689-.073 4.948 0 3.259.014 3.668.072 4.948.2 4.358 2.618 6.78 6.98 6.98 1.281.058 1.689.072 4.948.072 3.259 0 3.668-.014 4.948-.072 4.354-.2 6.782-2.618 6.979-6.98.059-1.28.073-1.689.073-4.948 0-3.259-.014-3.667-.072-4.947-.196-4.354-2.617-6.78-6.979-6.98-1.281-.059-1.69-.073-4.949-.073zm0 5.838c-3.403 0-6.162 2.759-6.162 6.162s2.759 6.163 6.162 6.163 6.162-2.759 6.162-6.163c0-3.403-2.759-6.162-6.162-6.162zm0 10.162c-2.209 0-4-1.79-4-4 0-2.209 1.791-4 4-4s4 1.791 4 4c0 2.21-1.791 4-4 4zm6.406-11.845c-.796 0-1.441.645-1.441 1.44s.645 1.44 1.441 1.44c.795 0 1.439-.645 1.439-1.44s-.644-1.44-1.439-1.44z"/>
+           </svg>
+           <span>Подписаться на Instagram</span>
+          </a>
+         </div>
+        </div>
+       </div>
+      </section>
+
+      <!-- Финальный CTA -->
       <section id="final-cta" class="fade-up">
        <div class="bg-slate-800/80 border border-cyan-500/60 rounded-2xl p-5 flex flex-col gap-4 text-sm">
         <div>
@@ -2147,6 +2183,10 @@ document.addEventListener('DOMContentLoaded', function() {
       process_heading: "Как мы работаем: 6 простых шагов",
       trust_heading: "Почему нам доверяют кандидаты",
       faq_heading: "Частые вопросы",
+      instagram_cta_heading: "Подпишитесь на наш Instagram",
+      instagram_cta_text: "Получайте эксклюзивный контент, новые вакансии и советы экспертов",
+      instagram_cta_services: "Нужна другая вакансия? Вопросы по иммиграции, ВНЖ или юридическим вопросам? У нас много специалистов!",
+      instagram_cta_button: "📸 Подписаться на Instagram",
       final_heading: "Готовы рассмотреть работу в Европе?",
       final_subtitle: "Оставьте короткую анкету или напишите в Telegram — ответим на вопросы и оценим ваши шансы на трудоустройство."
     };
@@ -3233,6 +3273,10 @@ document.addEventListener('DOMContentLoaded', function() {
         processHeading: "Biz qanday ishlaymiz: 6 oddiy qadam",
         trustHeading: "Haydovchilar bizga nima uchun ishonadi",
         faqHeading: "Tez-tez beriladigan savollar",
+        instagramCtaHeading: "Instagram'ga obuna bo'ling",
+        instagramCtaText: "Ekskluziv kontent, yangi vakansiyalar va mutaxassislarning maslahatlari",
+        instagramCtaServices: "Boshqa vakansiya kerakmi? Immigratsiya, VNJ yoki yuridik savollar bormi? Bizda ko'plab mutaxassislar bor!",
+        instagramCtaButton: "📸 Instagram'ga obuna bo'lish",
         finalHeading: "Yevropada ishlashni ko'rib chiqishga tayyormisiz?",
         finalSubtitle: "Qisqa anketa qoldiring yoki Telegramda yozing — savollarga javob beramiz va ish olish imkoniyatingizni baholaymiz.",
         "feature-1": "Slovakiyada rasmiy rasmiylashtiruv, xalq vizalari",
@@ -5032,6 +5076,10 @@ document.addEventListener('DOMContentLoaded', function() {
         processHeading: "How We Work: 6 Simple Steps",
         trustHeading: "Why Drivers Trust Us",
         faqHeading: "Frequently Asked Questions",
+        instagramCtaHeading: "Follow Us on Instagram",
+        instagramCtaText: "Get exclusive content, new vacancies, and expert advice",
+        instagramCtaServices: "Need another vacancy? Questions about immigration, residence permits, or legal matters? We have many specialists!",
+        instagramCtaButton: "📸 Follow on Instagram",
         finalHeading: "Ready to Consider Working in Europe?",
         finalSubtitle: "Leave a short questionnaire or write on Telegram — we'll answer questions and assess your employment chances.",
         "feature-1": "Official registration in Slovakia, national visas",
@@ -5348,6 +5396,25 @@ document.addEventListener('DOMContentLoaded', function() {
       if (processHeading) processHeading.textContent = trans.processHeading;
       if (trustHeading) trustHeading.textContent = trans.trustHeading;
       if (faqHeading) faqHeading.textContent = trans.faqHeading;
+
+      // Instagram CTA
+      const instagramCtaHeading = document.getElementById('instagram_cta_heading');
+      const instagramCtaText = document.getElementById('instagram_cta_text');
+      const instagramCtaServices = document.getElementById('instagram_cta_services');
+      const instagramCtaButton = document.getElementById('instagram_cta_button');
+      if (instagramCtaHeading) instagramCtaHeading.textContent = trans.instagramCtaHeading;
+      if (instagramCtaText) instagramCtaText.textContent = trans.instagramCtaText;
+      if (instagramCtaServices) instagramCtaServices.textContent = '💼 ' + trans.instagramCtaServices;
+      if (instagramCtaButton) {
+        const svg = instagramCtaButton.querySelector('svg');
+        const buttonText = trans.instagramCtaButton;
+        instagramCtaButton.innerHTML = '';
+        if (svg) instagramCtaButton.appendChild(svg.cloneNode(true));
+        const span = document.createElement('span');
+        span.textContent = buttonText;
+        instagramCtaButton.appendChild(span);
+      }
+
       if (finalHeading) finalHeading.textContent = trans.finalHeading;
       if (finalSubtitle) finalSubtitle.textContent = trans.finalSubtitle;
 
