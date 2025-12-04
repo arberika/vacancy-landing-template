@@ -89,6 +89,27 @@ const CONFIG = {
     keywords: ["работа водителем", "C+E", "Европа", "Словакия", "ERIAR", "Renault", "вакансия водителя"]
   },
 
+  // === АНАЛИТИКА ===
+  analytics: {
+    // Google Analytics 4 (GA4)
+    googleAnalytics: {
+      enabled: false, // Изменить на true для активации
+      measurementId: "G-XXXXXXXXXX" // Замените на ваш Measurement ID
+    },
+
+    // Яндекс.Метрика
+    yandexMetrika: {
+      enabled: false, // Изменить на true для активации
+      counterId: "XXXXXXXX" // Замените на ваш Counter ID
+    },
+
+    // Facebook Pixel (уже настроен)
+    facebookPixel: {
+      enabled: true,
+      pixelId: "3789700971281396"
+    }
+  },
+
   // === ЦВЕТА (Tailwind classes) ===
   colors: {
     primary: "cyan", // cyan, blue, emerald, purple, etc.
