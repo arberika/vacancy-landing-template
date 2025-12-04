@@ -33,7 +33,7 @@ const CONFIG = {
   contacts: {
     whatsapp: "+17329635593",
     whatsappText: "Здравствуйте! Интересует работа водителем C+E в Европе",
-    telegram: "@eriar_jobs",
+    telegram: "@ERIARcom_bot",
     phone: "+1 (732) 963-5593",
     email: "jobs@eriar.com"
   },
