@@ -607,12 +607,12 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
 
         <h3 id="video_title" class="text-lg font-semibold text-cyan-300 mt-2">Видео-презентация вакансии</h3>
-        <p id="video_subtitle" class="text-sm text-slate-400 mb-1">Здесь будет видео Sora с подробным объяснением условий, этапов оформления и примерами рейсов.</p>
+        <p id="video_subtitle" class="text-sm text-slate-400 mb-3">Здесь будет видео Sora с подробным объяснением условий, этапов оформления и примерами рейсов.</p>
 
-        <!-- Video carousel: horizontal scroll on mobile, vertical on desktop -->
-        <div class="flex md:flex-col gap-2 overflow-x-auto md:overflow-x-visible snap-x snap-mandatory md:snap-none scrollbar-hide">
+        <!-- Video grid: horizontal scroll on mobile, 2 columns on desktop -->
+        <div class="grid grid-cols-1 md:grid-cols-2 gap-3">
           <!-- Video 1 -->
-          <div class="relative bg-slate-800/80 border border-slate-700 rounded-lg overflow-hidden flex-shrink-0 snap-center w-[85vw] md:w-full" style="height: 140px;">
+          <div class="relative bg-slate-800/80 border border-slate-700 rounded-lg overflow-hidden" style="aspect-ratio: 16/9;">
             <video
              class="absolute inset-0 w-full h-full object-cover"
              controls
@@ -620,13 +620,13 @@ document.addEventListener('DOMContentLoaded', function() {
              src="./videos/video4.mp4#t=0.1">
              Ваш браузер не поддерживает видео.
             </video>
-            <div class="absolute bottom-1 left-1 bg-slate-900/90 backdrop-blur-sm px-2 py-1 rounded text-xs text-slate-200">
+            <div class="absolute bottom-2 left-2 bg-slate-900/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-medium text-slate-200">
              Видео 1
             </div>
           </div>
 
           <!-- Video 2 -->
-          <div class="relative bg-slate-800/80 border border-slate-700 rounded-lg overflow-hidden flex-shrink-0 snap-center w-[85vw] md:w-full" style="height: 140px;">
+          <div class="relative bg-slate-800/80 border border-slate-700 rounded-lg overflow-hidden" style="aspect-ratio: 16/9;">
             <video
              class="absolute inset-0 w-full h-full object-cover"
              controls
@@ -634,13 +634,13 @@ document.addEventListener('DOMContentLoaded', function() {
              src="./videos/video5.mp4#t=0.1">
              Ваш браузер не поддерживает видео.
             </video>
-            <div class="absolute bottom-1 left-1 bg-slate-900/90 backdrop-blur-sm px-2 py-1 rounded text-xs text-slate-200">
+            <div class="absolute bottom-2 left-2 bg-slate-900/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-medium text-slate-200">
              Видео 2
             </div>
           </div>
 
           <!-- Video 3 -->
-          <div class="relative bg-slate-800/80 border border-slate-700 rounded-lg overflow-hidden flex-shrink-0 snap-center w-[85vw] md:w-full" style="height: 140px;">
+          <div class="relative bg-slate-800/80 border border-slate-700 rounded-lg overflow-hidden" style="aspect-ratio: 16/9;">
             <video
              class="absolute inset-0 w-full h-full object-cover"
              controls
@@ -648,13 +648,13 @@ document.addEventListener('DOMContentLoaded', function() {
              src="./videos/video6.mp4#t=0.1">
              Ваш браузер не поддерживает видео.
             </video>
-            <div class="absolute bottom-1 left-1 bg-slate-900/90 backdrop-blur-sm px-2 py-1 rounded text-xs text-slate-200">
+            <div class="absolute bottom-2 left-2 bg-slate-900/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-medium text-slate-200">
              Видео 3
             </div>
           </div>
 
           <!-- Video 4 -->
-          <div class="relative bg-slate-800/80 border border-slate-700 rounded-lg overflow-hidden flex-shrink-0 snap-center w-[85vw] md:w-full" style="height: 140px;">
+          <div class="relative bg-slate-800/80 border border-slate-700 rounded-lg overflow-hidden" style="aspect-ratio: 16/9;">
             <video
              class="absolute inset-0 w-full h-full object-cover"
              controls
@@ -662,7 +662,7 @@ document.addEventListener('DOMContentLoaded', function() {
              src="./videos/video7.mp4#t=0.1">
              Ваш браузер не поддерживает видео.
             </video>
-            <div class="absolute bottom-1 left-1 bg-slate-900/90 backdrop-blur-sm px-2 py-1 rounded text-xs text-slate-200">
+            <div class="absolute bottom-2 left-2 bg-slate-900/90 backdrop-blur-sm px-2 py-1 rounded text-xs font-medium text-slate-200">
              Видео 4
             </div>
           </div>
