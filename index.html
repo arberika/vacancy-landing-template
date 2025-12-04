@@ -125,84 +125,6 @@
   <style>@view-transition { navigation: auto; }</style>
   <script src="./assets/data_sdk.js" type="text/javascript"></script>
 
-  <!-- SEO META TAGS -->
-  <meta name="description" content="Работа водителем C+E в Европе через Словакию. Зарплата 2500-2700€ чистыми. Официальное оформление, народные визы, новые Renault Euro 6. Полное сопровождение от А до Я.">
-  <meta name="keywords" content="работа водителем в европе, водитель CE европа, работа в словакии водитель, водитель международник, вакансия водитель фуры, виза словакия водитель, работа водитель грузовик европа">
-  <meta name="author" content="ERIAR Recruitment">
-  <meta name="robots" content="index, follow">
-  <link rel="canonical" href="https://ce.woweri.com/">
-
-  <!-- Open Graph / Facebook -->
-  <meta property="og:type" content="website">
-  <meta property="og:url" content="https://ce.woweri.com/">
-  <meta property="og:title" content="Работа водителем C+E в Европе через Словакию | 2500-2700€/мес">
-  <meta property="og:description" content="Официальное оформление в Словакии, народные визы, новые Renault Euro 6. Зарплата 2500-2700€ чистыми + бонусы. Полное сопровождение от А до Я.">
-  <meta property="og:image" content="https://ce.woweri.com/og-image.jpg">
-  <meta property="og:locale" content="ru_RU">
-  <meta property="og:site_name" content="ERIAR - Работа водителем в Европе">
-
-  <!-- Twitter -->
-  <meta property="twitter:card" content="summary_large_image">
-  <meta property="twitter:url" content="https://ce.woweri.com/">
-  <meta property="twitter:title" content="Работа водителем C+E в Европе | 2500-2700€/мес">
-  <meta property="twitter:description" content="Официальное оформление в Словакии, народные визы, новые Renault Euro 6. Зарплата 2500-2700€ чистыми.">
-  <meta property="twitter:image" content="https://ce.woweri.com/og-image.jpg">
-
-  <!-- FACEBOOK PIXEL -->
-  <script>
-!function(f,b,e,v,n,t,s)
-{if(f.fbq)return;n=f.fbq=function(){n.callMethod?
-n.callMethod.apply(n,arguments):n.queue.push(arguments)};
-if(!f._fbq)f._fbq=n;n.push=n;n.loaded=!0;n.version='2.0';
-n.queue=[];t=b.createElement(e);t.async=!0;
-t.src=v;s=b.getElementsByTagName(e)[0];
-s.parentNode.insertBefore(t,s)}(window, document,'script',
-'https://connect.facebook.net/en_US/fbevents.js');
-fbq('init', '3789700971281396');
-fbq('track', 'PageView');
-</script>
-  <noscript><img height="1" width="1" style="display:none" src="https://www.facebook.com/tr?id=3789700971281396&ev=PageView&noscript=1"/></noscript>
-
-  <!-- STRUCTURED DATA (Schema.org) -->
-  <script type="application/ld+json">
-{
-  "@context": "https://schema.org",
-  "@type": "JobPosting",
-  "title": "Водитель грузового автомобиля C+E в Европе",
-  "description": "Официальное оформление в Словакии, зарплата 2500-2700€ чистыми, новые Renault Euro 6, полное сопровождение",
-  "datePosted": "2025-01-01",
-  "validThrough": "2025-12-31",
-  "employmentType": "FULL_TIME",
-  "hiringOrganization": {
-    "@type": "Organization",
-    "name": "ERIAR Recruitment",
-    "sameAs": "https://ce.woweri.com",
-    "logo": "https://ce.woweri.com/logo.png"
-  },
-  "jobLocation": {
-    "@type": "Place",
-    "address": {
-      "@type": "PostalAddress",
-      "addressCountry": "SK",
-      "addressRegion": "Slovakia"
-    }
-  },
-  "baseSalary": {
-    "@type": "MonetaryAmount",
-    "currency": "EUR",
-    "value": {
-      "@type": "QuantitativeValue",
-      "minValue": 2500,
-      "maxValue": 2700,
-      "unitText": "MONTH"
-    }
-  },
-  "qualifications": "Права категории C+E, опыт работы водителем",
-  "responsibilities": "Международные перевозки грузов по Европе",
-  "benefits": "Официальное оформление, виза, новый автомобиль, полное сопровождение"
-}
-</script>
-
   <!-- ANALYTICS SYSTEM WITH MONGODB -->
   <script>
 // Parse UTM parameters from URL
@@ -703,6 +625,147 @@ document.addEventListener('DOMContentLoaded', function() {
         </div>
        </div>
       </section>
+
+      <!-- 🔥 VACANCIES TABLE SECTION -->
+      <section id="vacancies-section" class="fade-up visible bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl p-6 sm:p-8 border border-slate-700">
+        <div class="text-center mb-6">
+          <h2 class="text-xl sm:text-2xl font-bold mb-2 bg-gradient-to-r from-cyan-400 to-blue-400 bg-clip-text text-transparent">
+            50+ актуальных вакансий в Европе
+          </h2>
+          <p class="text-sm text-slate-400">Официальное трудоустройство • ВНЖ • Помощь с визой</p>
+        </div>
+
+        <!-- Filters -->
+        <div class="mb-6 grid grid-cols-1 md:grid-cols-4 gap-3">
+          <!-- Search -->
+          <div class="md:col-span-1">
+            <input
+              type="text"
+              id="vacancy-search"
+              placeholder="🔍 Поиск по названию..."
+              class="w-full px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-slate-200 text-sm placeholder-slate-500 focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500"
+            >
+          </div>
+
+          <!-- Country Filter -->
+          <div class="md:col-span-1">
+            <select
+              id="country-filter"
+              class="w-full px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-slate-200 text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500"
+            >
+              <option value="">Все страны</option>
+            </select>
+          </div>
+
+          <!-- Category Filter -->
+          <div class="md:col-span-1">
+            <select
+              id="category-filter"
+              class="w-full px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-slate-200 text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500"
+            >
+              <option value="">Все категории</option>
+            </select>
+          </div>
+
+          <!-- Salary Filter -->
+          <div class="md:col-span-1">
+            <select
+              id="salary-filter"
+              class="w-full px-4 py-2 bg-slate-800/80 border border-slate-700 rounded-lg text-slate-200 text-sm focus:outline-none focus:border-cyan-500 focus:ring-1 focus:ring-cyan-500"
+            >
+              <option value="">Любая зарплата</option>
+              <option value="1500-2000">1500-2000€</option>
+              <option value="2000-2500">2000-2500€</option>
+              <option value="2500-3000">2500-3000€</option>
+              <option value="3000+">3000€+</option>
+            </select>
+          </div>
+        </div>
+
+        <!-- Results count -->
+        <div class="mb-4 text-sm text-slate-400">
+          Найдено вакансий: <span id="results-count" class="font-semibold text-cyan-400">50</span>
+        </div>
+
+        <!-- Vacancies Table -->
+        <div class="overflow-x-auto">
+          <div id="vacancies-list" class="space-y-3">
+            <!-- Vacancies will be inserted here by JavaScript -->
+          </div>
+        </div>
+
+        <!-- No results message -->
+        <div id="no-results" class="hidden text-center py-8">
+          <p class="text-slate-400">😔 Вакансий не найдено. Попробуйте изменить фильтры.</p>
+        </div>
+      </section>
+
+      <!-- Modal Window -->
+      <div id="vacancy-modal" class="hidden fixed inset-0 z-50 overflow-y-auto">
+        <div class="flex items-center justify-center min-h-screen px-4 pt-4 pb-20 text-center sm:block sm:p-0">
+          <!-- Background overlay -->
+          <div class="fixed inset-0 transition-opacity bg-slate-900 bg-opacity-75 backdrop-blur-sm" onclick="closeVacancyModal()"></div>
+
+          <!-- Modal panel -->
+          <div class="inline-block align-bottom bg-slate-800 rounded-2xl text-left overflow-hidden shadow-xl transform transition-all sm:my-8 sm:align-middle sm:max-w-2xl sm:w-full border border-slate-700">
+            <!-- Header -->
+            <div class="bg-gradient-to-r from-cyan-600 to-blue-600 px-6 py-4">
+              <div class="flex items-center justify-between">
+                <h3 id="modal-title" class="text-xl font-bold text-white"></h3>
+                <button onclick="closeVacancyModal()" class="text-white hover:text-slate-200 transition">
+                  <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                    <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M6 18L18 6M6 6l12 12"></path>
+                  </svg>
+                </button>
+              </div>
+              <p id="modal-country-salary" class="text-sm text-cyan-100 mt-1"></p>
+            </div>
+
+            <!-- Body -->
+            <div class="px-6 py-5 space-y-4">
+              <!-- Description -->
+              <div>
+                <h4 class="text-sm font-semibold text-cyan-400 mb-2">📋 Описание</h4>
+                <p id="modal-description" class="text-sm text-slate-300"></p>
+              </div>
+
+              <!-- Requirements -->
+              <div>
+                <h4 class="text-sm font-semibold text-cyan-400 mb-2">✅ Требования</h4>
+                <ul id="modal-requirements" class="space-y-1 text-sm text-slate-300">
+                </ul>
+              </div>
+
+              <!-- Benefits -->
+              <div>
+                <h4 class="text-sm font-semibold text-cyan-400 mb-2">🎁 Преимущества</h4>
+                <ul id="modal-benefits" class="space-y-1 text-sm text-slate-300">
+                </ul>
+              </div>
+            </div>
+
+            <!-- Footer -->
+            <div class="bg-slate-900/50 px-6 py-4 flex flex-col sm:flex-row gap-3">
+              <a
+                href="https://wa.me/421904452568?text=Здравствуйте!%20Интересует%20вакансия:"
+                target="_blank"
+                onclick="trackVacancyClick('whatsapp')"
+                class="flex-1 bg-gradient-to-r from-green-600 to-green-500 hover:from-green-500 hover:to-green-400 text-white px-6 py-3 rounded-lg font-semibold text-center transition shadow-lg hover:shadow-green-500/50"
+              >
+                💬 Написать в WhatsApp
+              </a>
+              <a
+                href="https://t.me/eriarwork"
+                target="_blank"
+                onclick="trackVacancyClick('telegram')"
+                class="flex-1 bg-gradient-to-r from-blue-600 to-blue-500 hover:from-blue-500 hover:to-blue-400 text-white px-6 py-3 rounded-lg font-semibold text-center transition shadow-lg hover:shadow-blue-500/50"
+              >
+                ✈️ Написать в Telegram
+              </a>
+            </div>
+          </div>
+        </div>
+      </div>
 
       <!-- О компании ERIAR - доказательства легитимности -->
       <section id="about-company" class="fade-up visible bg-gradient-to-br from-slate-800/50 to-slate-900/50 rounded-2xl p-6 sm:p-8 border border-slate-700">
@@ -2074,15 +2137,15 @@ document.addEventListener('DOMContentLoaded', function() {
       font_family: "Inter",
       font_size: 16,
 
-      main_heading: "Работа для водителей C+E в Европе",
-      hero_subtitle: "Официальное оформление в Словакии, народные визы и современный автопарк Renault Euro 6. Полное сопровождение оформления документов и прозрачный доход от 2500 до 2700 € в месяц.",
-      video_title: "Видео-презентация вакансии",
-      video_subtitle: "Здесь будет видео Sora с подробным объяснением условий, этапов оформления и примерами рейсов.",
-      fit_heading: "Кому подойдёт эта вакансия",
+      main_heading: "Работа в Европе",
+      hero_subtitle: "Официальное трудоустройство в Словакии, Польше, Чехии, Германии и других странах Европы. ВНЖ через 3-4 месяца работы. Полное сопровождение при оформлении документов и переезде.",
+      video_title: "Видео-презентация вакансий",
+      video_subtitle: "Здесь будут видео с подробным объяснением условий работы, этапов оформления и примерами вакансий.",
+      fit_heading: "Какие вакансии доступны",
       terms_heading: "Условия работы и оплата",
       docs_heading: "Документы и оформление",
       process_heading: "Как мы работаем: 6 простых шагов",
-      trust_heading: "Почему нам доверяют водители",
+      trust_heading: "Почему нам доверяют кандидаты",
       faq_heading: "Частые вопросы",
       final_heading: "Готовы рассмотреть работу в Европе?",
       final_subtitle: "Оставьте короткую анкету или напишите в Telegram — ответим на вопросы и оценим ваши шансы на трудоустройство."
@@ -6018,4 +6081,239 @@ document.addEventListener('keydown', function(e) {
   }
 });
 </script>
+
+<!-- Load Vacancies Database -->
+<script src="./vacancies-data.js"></script>
+
+<!-- Vacancies Filter & Modal Script -->
+<script>
+// ===== VACANCY FILTERING & DISPLAY =====
+
+let allVacancies = [];
+let filteredVacancies = [];
+
+// Initialize vacancies on page load
+document.addEventListener('DOMContentLoaded', function() {
+  if (typeof VACANCIES_DB !== 'undefined') {
+    allVacancies = VACANCIES_DB;
+    filteredVacancies = [...allVacancies];
+
+    initializeFilters();
+    renderVacancies();
+
+    // Attach event listeners
+    document.getElementById('vacancy-search').addEventListener('input', filterVacancies);
+    document.getElementById('country-filter').addEventListener('change', filterVacancies);
+    document.getElementById('category-filter').addEventListener('change', filterVacancies);
+    document.getElementById('salary-filter').addEventListener('change', filterVacancies);
+  }
+});
+
+// Initialize filter dropdowns
+function initializeFilters() {
+  if (typeof COUNTRIES !== 'undefined') {
+    const countryFilter = document.getElementById('country-filter');
+    COUNTRIES.slice(1).forEach(country => { // Skip "Все страны"
+      const option = document.createElement('option');
+      option.value = country;
+      option.textContent = country;
+      countryFilter.appendChild(option);
+    });
+  }
+
+  if (typeof CATEGORIES !== 'undefined') {
+    const categoryFilter = document.getElementById('category-filter');
+    CATEGORIES.slice(1).forEach(category => { // Skip "Все категории"
+      const option = document.createElement('option');
+      option.value = category;
+      option.textContent = category;
+      categoryFilter.appendChild(option);
+    });
+  }
+}
+
+// Filter vacancies based on all criteria
+function filterVacancies() {
+  const searchTerm = document.getElementById('vacancy-search').value.toLowerCase();
+  const selectedCountry = document.getElementById('country-filter').value;
+  const selectedCategory = document.getElementById('category-filter').value;
+  const selectedSalary = document.getElementById('salary-filter').value;
+
+  filteredVacancies = allVacancies.filter(vacancy => {
+    // Search filter
+    const matchesSearch = !searchTerm ||
+      vacancy.profession.toLowerCase().includes(searchTerm) ||
+      vacancy.country.toLowerCase().includes(searchTerm) ||
+      vacancy.description.toLowerCase().includes(searchTerm);
+
+    // Country filter
+    const matchesCountry = !selectedCountry || vacancy.country === selectedCountry;
+
+    // Category filter
+    const matchesCategory = !selectedCategory || vacancy.category === selectedCategory;
+
+    // Salary filter
+    let matchesSalary = true;
+    if (selectedSalary) {
+      if (selectedSalary === '1500-2000') {
+        matchesSalary = vacancy.salaryMin >= 1500 && vacancy.salaryMax <= 2000;
+      } else if (selectedSalary === '2000-2500') {
+        matchesSalary = vacancy.salaryMin >= 2000 && vacancy.salaryMax <= 2500;
+      } else if (selectedSalary === '2500-3000') {
+        matchesSalary = vacancy.salaryMin >= 2500 && vacancy.salaryMax <= 3000;
+      } else if (selectedSalary === '3000+') {
+        matchesSalary = vacancy.salaryMin >= 3000;
+      }
+    }
+
+    return matchesSearch && matchesCountry && matchesCategory && matchesSalary;
+  });
+
+  renderVacancies();
+
+  // Track filter usage
+  if (typeof trackEvent === 'function') {
+    trackEvent('vacancy_filter_used', {
+      search: searchTerm,
+      country: selectedCountry,
+      category: selectedCategory,
+      salary: selectedSalary,
+      results_count: filteredVacancies.length
+    });
+  }
+}
+
+// Render vacancies list
+function renderVacancies() {
+  const container = document.getElementById('vacancies-list');
+  const noResults = document.getElementById('no-results');
+  const resultsCount = document.getElementById('results-count');
+
+  resultsCount.textContent = filteredVacancies.length;
+
+  if (filteredVacancies.length === 0) {
+    container.innerHTML = '';
+    noResults.classList.remove('hidden');
+    return;
+  }
+
+  noResults.classList.add('hidden');
+
+  container.innerHTML = filteredVacancies.map(vacancy => `
+    <div class="bg-slate-800/80 border border-slate-700 rounded-lg p-4 hover:border-cyan-500 transition cursor-pointer" onclick="openVacancyModal(${vacancy.id})">
+      <div class="flex flex-col sm:flex-row sm:items-center sm:justify-between gap-3">
+        <div class="flex-1">
+          <h3 class="text-base font-semibold text-white mb-1">${vacancy.profession}</h3>
+          <div class="flex flex-wrap items-center gap-2 text-xs text-slate-400">
+            <span class="flex items-center gap-1">
+              📍 ${vacancy.country}
+            </span>
+            <span class="hidden sm:inline">•</span>
+            <span class="flex items-center gap-1">
+              📂 ${vacancy.category}
+            </span>
+            <span class="hidden sm:inline">•</span>
+            <span class="flex items-center gap-1 font-semibold text-emerald-400">
+              💰 ${vacancy.salary}
+            </span>
+          </div>
+        </div>
+        <div class="flex-shrink-0">
+          <button class="bg-gradient-to-r from-cyan-600 to-blue-600 hover:from-cyan-500 hover:to-blue-500 text-white px-4 py-2 rounded-lg text-sm font-semibold transition shadow-lg">
+            Подробнее →
+          </button>
+        </div>
+      </div>
+    </div>
+  `).join('');
+}
+
+// Open vacancy modal
+function openVacancyModal(vacancyId) {
+  const vacancy = allVacancies.find(v => v.id === vacancyId);
+  if (!vacancy) return;
+
+  // Fill modal content
+  document.getElementById('modal-title').textContent = vacancy.profession;
+  document.getElementById('modal-country-salary').textContent = `${vacancy.country} • ${vacancy.salary}`;
+  document.getElementById('modal-description').textContent = vacancy.description;
+
+  // Requirements
+  const requirementsList = document.getElementById('modal-requirements');
+  requirementsList.innerHTML = vacancy.requirements.map(req =>
+    `<li class="flex items-start gap-2"><span class="text-cyan-400">✓</span><span>${req}</span></li>`
+  ).join('');
+
+  // Benefits
+  const benefitsList = document.getElementById('modal-benefits');
+  benefitsList.innerHTML = vacancy.benefits.map(benefit =>
+    `<li class="flex items-start gap-2"><span class="text-emerald-400">🎁</span><span>${benefit}</span></li>`
+  ).join('');
+
+  // Show modal
+  document.getElementById('vacancy-modal').classList.remove('hidden');
+  document.body.style.overflow = 'hidden';
+
+  // Track modal open
+  if (typeof trackEvent === 'function') {
+    trackEvent('vacancy_modal_opened', {
+      vacancy_id: vacancyId,
+      profession: vacancy.profession,
+      country: vacancy.countryCode,
+      salary: vacancy.salary
+    });
+  }
+}
+
+// Close vacancy modal
+function closeVacancyModal() {
+  document.getElementById('vacancy-modal').classList.add('hidden');
+  document.body.style.overflow = '';
+}
+
+// Track vacancy click (WhatsApp/Telegram)
+function trackVacancyClick(platform) {
+  const vacancyTitle = document.getElementById('modal-title').textContent;
+
+  if (typeof trackEvent === 'function') {
+    trackEvent('vacancy_contact_clicked', {
+      platform: platform,
+      vacancy: vacancyTitle
+    });
+  }
+
+  // Facebook Pixel
+  if (typeof fbq !== 'undefined') {
+    fbq('track', 'Contact', {
+      content_name: vacancyTitle,
+      content_category: platform
+    });
+  }
+
+  // Google Analytics
+  if (typeof gtag !== 'undefined') {
+    gtag('event', 'contact_click', {
+      event_category: 'Vacancy',
+      event_label: vacancyTitle,
+      value: platform
+    });
+  }
+
+  // Yandex Metrika
+  if (typeof ym !== 'undefined') {
+    ym(98765432, 'reachGoal', 'vacancy_contact', {
+      vacancy: vacancyTitle,
+      platform: platform
+    });
+  }
+}
+
+// Close modal on ESC
+document.addEventListener('keydown', function(e) {
+  if (e.key === 'Escape') {
+    closeVacancyModal();
+  }
+});
+</script>
+
 </body></html>
